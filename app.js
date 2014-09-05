@@ -19,10 +19,11 @@
 
 var bodyparser = require("body-parser");
 var express = require("express");
+var path = require("path");
 var nb = require("nedb");
 var app = express();
 
-var db = new nb({filename: "./src/model/appstore.db", autoload: true});
+var db = new nb({filename: path.dirname(process.execPath) + "/appstore.db", autoload: true});
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded());
