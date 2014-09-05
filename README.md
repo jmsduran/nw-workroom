@@ -9,8 +9,6 @@ Running
 To start the nw-workroom app, from the project's root directory run the following command:
 
 ```
-npm install
-
 node app.js
 ```
 
