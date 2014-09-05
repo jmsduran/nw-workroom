@@ -1,18 +1,20 @@
-node-workroom (v2.0.0)
+nw-workroom (v2.0.0)
 =============
 
-A Node.js dashboard for the workplace.
+A node-webkit port of [node-workroom] (https://github.com/jmsduran/node-workroom). In order to run flawlessly as a desktop application via node-webkit, some minor alterations must be made.
 
 Running
 ---
 
-To start the node-workroom app, from the project's root directory run the following command:
+To start the nw-workroom app, from the project's root directory run the following command:
 
 ```
+npm install
+
 node app.js
 ```
 
-node-workroom uses handlebars templates stored in `src/view/html`. These templates are then pre-compiled into `src/view/js/view.compiled.js` and included within the app's main HTML.
+nw-workroom uses handlebars templates stored in `src/view/html`. These templates are then pre-compiled into `src/view/js/view.compiled.js` and included within the app's main HTML.
 
 Whenever these templates are modified, the following handlebars command should be run prior to deployment:
 
@@ -23,7 +25,7 @@ handlebars src/view/html -e hbs -f src/view/js/view.compiled.js
 Dependencies
 ---
 
-[Node.js] (http://nodejs.org/) is required in order to run the node-workroom app, in addition to the following dependencies:
+[Node.js] (http://nodejs.org/) is required in order to run the nw-workroom app, in addition to the following dependencies:
 
 * body-parser (version 1.6.4)
 * express (version 4.8.2)
