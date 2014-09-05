@@ -53,6 +53,13 @@ $(document).ready(function() {
           });
 
           if (typeof(link.type) === "undefined" || link.type === "external-url") {
+               $(linkElement).click(function(e) {
+                    e.preventDefault();
+			     e.stopPropagation();
+
+			     window.nwDispatcher.requireNwGui().Shell.openExternal($(this).attr("href"));
+               });
+
                console.log(link.id + ", " + link.name + " is an external-url.");
 
           } else if (link.type === "internal-note") {
