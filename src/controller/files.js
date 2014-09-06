@@ -21,7 +21,7 @@ var fs = require("fs");
 
 module.exports = function(app) {
      app.get("/", function(request, response) {
-          fs.readFile("./src/view/html/dashboard.html", function(err, data) {
+          fs.readFile("./dashboard.html", function(err, data) {
                response.writeHead(200, {
                     "Content-Type": "text/html"
                });

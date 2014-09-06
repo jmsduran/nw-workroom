@@ -4,9 +4,9 @@
           <link rel="stylesheet" type="text/css" href="/semantic-ui/css/semantic.min.css"></link>
 
           <script>
-               function init() {
-                    require("./app.js");
-                    window.location.assign("http://localhost:8080/");
+               function bodyOnLoad() {
+                    require('./app.js');
+                    window.location.assign('http://localhost:8080/');
                }
           </script>
 
@@ -36,7 +36,7 @@
                }
           </style>
      </head>
-     <body onLoad="init()">
+     <body onload="bodyOnLoad()">
           <div id="dashboard-content" class="three column doubling ui grid"></div>
      </body>
 </html>

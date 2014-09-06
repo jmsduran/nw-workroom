@@ -6,11 +6,7 @@ A node-webkit port of [node-workroom] (https://github.com/jmsduran/node-workroom
 Running
 ---
 
-To start the nw-workroom app, from the project's root directory run the following command:
-
-```
-node app.js
-```
+To package and run the mw-workroom app, please refer to the node-webkit [How to package and distribute your apps] (https://github.com/rogerwang/node-webkit/wiki/How-to-package-and-distribute-your-apps) article.
 
 nw-workroom uses handlebars templates stored in `src/view/html`. These templates are then pre-compiled into `src/view/js/view.compiled.js` and included within the app's main HTML.
 
@@ -19,6 +15,8 @@ Whenever these templates are modified, the following handlebars command should b
 ```
 handlebars src/view/html -e hbs -f src/view/js/view.compiled.js
 ```
+
+Note: This application currently runs on port 8080, and will interfere with other applications or web services running on the same port. Future improvements to this project include enabling it to run on different port numbers, or forgo the client/server architecture entirely and perform direct database calls.
 
 Dependencies
 ---
