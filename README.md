@@ -6,7 +6,7 @@ A node-webkit port of [node-workroom] (https://github.com/jmsduran/node-workroom
 Running
 ---
 
-To package and run the mw-workroom app, please refer to the node-webkit [How to package and distribute your apps] (https://github.com/rogerwang/node-webkit/wiki/How-to-package-and-distribute-your-apps) article.
+To package and run the nw-workroom app, please refer to the node-webkit [How to package and distribute your apps] (https://github.com/rogerwang/node-webkit/wiki/How-to-package-and-distribute-your-apps) article.
 
 nw-workroom uses handlebars templates stored in `src/view/html`. These templates are then pre-compiled into `src/view/js/view.compiled.js` and included within the app's main HTML.
 
