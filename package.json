@@ -1,6 +1,6 @@
 {
   "name": "nw-workroom",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "A node-webkit port of node-workroom",
   "main": "dashboard.html",
   "author": "James M. Duran",
