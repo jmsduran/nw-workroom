@@ -16,7 +16,7 @@ Whenever these templates are modified, the following handlebars command should b
 handlebars src/view/html -e hbs -f src/view/js/view.compiled.js
 ```
 
-Note: This application currently runs on port 8080, and will interfere with other applications or web services running on the same port. Future improvements to this project include enabling it to run on different port numbers, or forgo the client/server architecture entirely and perform direct database calls.
+Note: This application currently runs on port 1337. If nw-workroom interferes with any other application or web service running on the same machine, simply change the port numbers listed in `dashboard.html` and `app.js`, and redeploy the application.
 
 Dependencies
 ---

@@ -52,4 +52,4 @@ require("./src/controller/links.js")(app, db);
 
 require("./src/controller/notes.js")(app, db);
 
-app.listen(8080);
+app.listen(1337);

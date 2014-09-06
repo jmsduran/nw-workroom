@@ -12,6 +12,5 @@
   },
   "window": {
     "toolbar": false
-  },
-  "node-remote": "<local>"
+  }
 }
